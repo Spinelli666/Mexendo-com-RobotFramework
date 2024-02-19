@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.12.0 on win32)" generated="20240219 12:04:38.367" rpa="false" schemaversion="3">
+<suite id="s1" name="Form" source="E:\Cursos Online\RobotFramework\Aula Robot 3\form.robot">
+<test id="s1-t1" name="Cenário 1: Preencher formulário" line="33">
+<kw name="abrir navegador e acessar o site">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demoqa.com/automation-practice-form</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240219 12:04:38.560" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<status status="PASS" starttime="20240219 12:04:38.559" endtime="20240219 12:04:44.126"/>
+</kw>
+<status status="PASS" starttime="20240219 12:04:38.559" endtime="20240219 12:04:44.126"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_firstName}</arg>
+<arg>Arya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240219 12:04:44.127" level="INFO">Typing text 'Arya' into text field 'id:firstName'.</msg>
+<status status="PASS" starttime="20240219 12:04:44.127" endtime="20240219 12:04:44.216"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240219 12:04:45.216" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240219 12:04:44.216" endtime="20240219 12:04:45.216"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_lastName}</arg>
+<arg>Stark</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240219 12:04:45.216" level="INFO">Typing text 'Stark' into text field 'id:lastName'.</msg>
+<status status="PASS" starttime="20240219 12:04:45.216" endtime="20240219 12:04:45.294"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_userEmail}</arg>
+<arg>arya.stark@winterfell.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240219 12:04:45.294" level="INFO">Typing text 'arya.stark@winterfell.com' into text field 'id:userEmail'.</msg>
+<status status="PASS" starttime="20240219 12:04:45.294" endtime="20240219 12:04:45.370"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_userNumber}</arg>
+<arg>555-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240219 12:04:45.370" level="INFO">Typing text '555-1234' into text field 'id:userNumber'.</msg>
+<status status="PASS" starttime="20240219 12:04:45.370" endtime="20240219 12:04:45.440"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240219 12:04:46.440" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240219 12:04:45.440" endtime="20240219 12:04:46.440"/>
+</kw>
+<status status="PASS" starttime="20240219 12:04:44.127" endtime="20240219 12:04:46.440"/>
+</kw>
+<kw name="clicar em buttons">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:gender-radio-1</arg>
+<arg>Male</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20240219 12:04:46.440" level="FAIL">Keyword 'SeleniumLibrary.Select Checkbox' expected 1 argument, got 2.</msg>
+<status status="FAIL" starttime="20240219 12:04:46.440" endtime="20240219 12:04:46.440"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240219 12:04:46.440" endtime="20240219 12:04:46.440"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:hobbies-checkbox-3</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240219 12:04:46.440" endtime="20240219 12:04:46.441"/>
+</kw>
+<status status="FAIL" starttime="20240219 12:04:46.440" endtime="20240219 12:04:46.441"/>
+</kw>
+<kw name="fechar navegador">
+<status status="NOT RUN" starttime="20240219 12:04:46.441" endtime="20240219 12:04:46.441"/>
+</kw>
+<status status="FAIL" starttime="20240219 12:04:38.559" endtime="20240219 12:04:46.441">Keyword 'SeleniumLibrary.Select Checkbox' expected 1 argument, got 2.</status>
+</test>
+<status status="FAIL" starttime="20240219 12:04:38.368" endtime="20240219 12:04:46.442"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Form">Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
